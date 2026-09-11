@@ -24,7 +24,20 @@
     }
 
     section {
+      display: none;
       padding: 20px;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    #home {
+      display: block;
+    }
+
+    section:target ~ #home {
+      display: none;
     }
   </style>
 </head>
@@ -37,14 +50,9 @@
   <a href="#about">About</a>
 </div>
 
-<section id="home">
-  <h1>The Paradiseᵀᴹ</h1>
-  <p>Plan your next vacation with Paradiseᵀᴹ.</p>
-</section>
-
-<section id="about">
-  <h1>About</h1>
-  <p>The Paradiseᵀᴹ is specifically created to help you plan your next vacation.</p>
+<section id="news">
+  <h1>News</h1>
+  <p>No news yet.</p>
 </section>
 
 <section id="contact">
@@ -52,9 +60,14 @@
   <p>If you have any questions or feedback, please contact us at <a href="mailto:theparadise@gmail.com">theparadise@gmail.com</a>.</p>
 </section>
 
-<section id="news">
-  <h1>News</h1>
-  <p>No news yet.</p>
+<section id="about">
+  <h1>About</h1>
+  <p>The Paradiseᵀᴹ is specifically created to help you plan your next vacation.</p>
+</section>
+
+<section id="home">
+  <h1>The Paradiseᵀᴹ</h1>
+  <p>Plan your next vacation with Paradiseᵀᴹ.</p>
 </section>
 
 </body>
