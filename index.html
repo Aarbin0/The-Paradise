@@ -6,6 +6,25 @@
   <link href="ParadiseLogo.png" type="image/png" rel="icon">
   <title>The Paradise™</title>
   <style>
+  html {
+  scroll-behavior: smooth;
+}
+
+#about2:target .content {
+  animation: fadeUp 0.7s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     :root { --green: #174b3b; --green-dark: #10362b; --cream: #f8f6ef; --orange: #c9744a; --text: #20342d; }
     * { box-sizing: border-box; }
 
